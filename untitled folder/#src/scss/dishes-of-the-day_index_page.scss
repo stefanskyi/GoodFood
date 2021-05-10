@@ -16,6 +16,7 @@
 	}
 
 	&__container {
+		padding: 0 50px;
 	}
 
 	&__title {
@@ -46,9 +47,24 @@
 		}
 		&:hover {
 			transform: scale(1.2);
+			.card-title {
+				font-size: 36px;
+				font-weight: 600;
+			}
 			.card-text_left,
 			.dishes__btn_menu {
 				display: inline-flex;
+			}
+			.card-text_bubble__border{
+				position: absolute;
+				display: flex;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				border: 1px solid #ffdd63;
+				top: -301px;
+				left: -33px;
+				z-index: -1;
 			}
 			.card-text_bubble {
 				display: flex;
@@ -57,19 +73,33 @@
 				height: 80px;
 				background-color: #ffdd63;
 				border-radius: 50%;
+				// border: 1px solid red;
+				// padding: 10px;
 				justify-content: center;
 				position: absolute;
 				top: -291px;
 				left: -23px;
 				z-index: -1;
+				
 			}
+			
 			.card-text {
 				span {
+					display: flex;
+					flex-direction: column;
+					
+					align-items: center;
+
 					&::after {
 						content: "";
 						margin: 0;
+						border-bottom: 1px solid #fafafa;
+						width: 60px;
 					}
 				}
+			}
+			.card {
+				margin-bottom: 60px;
 			}
 		}
 	}
@@ -158,3 +188,5 @@
 	padding: 11px 21px;
 	@include adaptiv-value("height", 43, 35, 0);
 }
+
+
