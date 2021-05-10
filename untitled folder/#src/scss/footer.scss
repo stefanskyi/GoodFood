@@ -1,0 +1,131 @@
+.footer {
+	background-color: #282630;
+	&__content {
+		padding: 0px 10px;
+		max-width: 1800px;
+	}
+
+	&__menu {
+		@include adaptiv-value("height", 134, 60, 0);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				// margin-left: 56px;
+				@include adaptiv-value("margin-left", 56, 10, 0);
+				&:hover {
+					transform: scale(1.1);
+					a {
+						color: #fafafa;
+					}
+				}
+
+				&:first-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	&__left {
+	}
+
+	&__right {
+		display: flex;
+		&__btn {
+			display: none;
+		}
+	}
+	&__btn {
+		display: inline-flex;
+
+		//
+		// padding: 11px 21px;
+		@include adaptiv-value("padding-top", 11, 5, 0);
+		@include adaptiv-value("padding-bottom", 11, 5, 0);
+		@include adaptiv-value("padding-left", 21, 5, 0);
+		@include adaptiv-value("padding-right", 21, 5, 0);
+		border-radius: 25px;
+		background-color: #ffdd63;
+		align-items: center;
+		justify-content: center;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	.footer__btn {
+		@include adaptiv-value("font-size", 14, 12, 0);
+		color: #282630;
+		font-family: Poppins;
+		font-weight: 500;
+		text-align: center;
+		@include adaptiv-value("width", 150, 130, 0);
+
+		@include adaptiv-value("height", 43, 35, 0);
+
+	}
+
+	&__down {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-top: 1px solid #34323e;
+
+		p {
+			// margin-bottom: 31px;
+			@include adaptiv-value("margin-top", 31, 10, 0);
+			@include adaptiv-value("margin-bottom", 31, 10, 0);
+
+			color: #65636a;
+			font-family: Poppins;
+			// font-size: 12px;
+			@include adaptiv-value("font-size", 12, 8, 0);
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.foter {
+	&__top {
+	}
+}
+.footer-menu {
+	&__logo {
+		@include adaptiv-value("width", 126.28, 90.28, 0);
+
+		&:hover {
+			transform: scale(1.1);
+		}
+		// cursor: pointer;
+		img {
+			@include adaptiv-value("height", 75, 36, 0);
+			// margin-right: 20px;
+			max-width: 75px;
+			max-height: 75px;
+			// vertical-align: text-top;
+		}
+		@media (max-width: 380px) {
+			display: none;
+		}
+	}
+
+	&__body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+		color: #fafafa;
+		font-weight: 400;
+		text-decoration: none;
+	}
+}
