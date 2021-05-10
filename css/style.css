@@ -1158,7 +1158,6 @@ body.ie ._ibg img {
   display: flex;
   text-align: center;
   width: 100%;
-  min-height: 496px;
   background-color: #fee382;
 }
 
@@ -1179,6 +1178,7 @@ body.ie ._ibg img {
 
 .why__column .card {
   background-color: #fee382;
+  padding-bottom: calc(0px + 32 * ((100vw - 320px) / 1600));
 }
 
 .why__column .card-img-top {
@@ -1221,6 +1221,7 @@ body.ie ._ibg img {
 
 .card {
   border: none;
+  width: calc(240px + 48 * ((100vw - 320px) / 1600));
 }
 
 .card-title {
