@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;
+
+600;700&display=swap");
 @font-face {
   font-family: "Cabin";
   font-display: swap;
@@ -891,6 +894,7 @@ body.ie ._ibg img {
 }
 
 .header {
+  position: fixed;
   z-index: 50;
   width: 100%;
   background: red;
@@ -1106,58 +1110,12 @@ body.ie ._ibg img {
   display: none;
 }
 
-/*
-//Burger
-.icon-menu {
-	display: none;
-	@media (max-width: $md3+px) {
-		display: block;
-		position: absolute;
-		top: 18px;
-		right: 10px;
-		width: 30px;
-		height: 18px;
-		cursor: pointer;
-		z-index: 5;
-		span {
-			transition: all 0.3s ease 0s;
-			top: calc(50% - 1px);
-			left: 0px;
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-			&:first-child {
-				top: 0px;
-			}
-			&:last-child {
-				top: auto;
-				bottom: 0px;
-			}
-		}
-		&._active {
-			span {
-				transform: scale(0);
-				&:first-child {
-					transform: rotate(-45deg);
-					top: calc(50% - 1px);
-				}
-				&:last-child {
-					transform: rotate(45deg);
-					bottom: calc(50% - 1px);
-				}
-			}
-		}
-	}
-}
-*/
-
 .goodfood {
   margin-top: 134px;
 }
 
 .goodfood__container {
-  min-height: calc(100vh - calc(60px + 74 * ((100vw - 320px) / 1600)));
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1169,6 +1127,7 @@ body.ie ._ibg img {
 }
 
 .goodfood__wrapper {
+  padding-top: calc(60px + 74 * ((100vw - 320px) / 1600));
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1186,21 +1145,14 @@ body.ie ._ibg img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: calc(15px + 900 * ((100vw - 320px) / 1600));
-  padding-bottom: calc(15px + 65 * ((100vw - 320px) / 1600));
-  padding-left: calc(15px + 65 * ((100vw - 320px) / 1600));
-}
-
-.goodfood__social a:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  margin-right: calc(15px + 980 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(15px + 65 * ((100vw - 320px) / 1600));
 }
 
 .goodfood__img {
   position: absolute;
   z-index: -1;
-  top: calc(265px + -465 * ((100vw - 320px) / 1600));
+  top: calc(265px + -335 * ((100vw - 320px) / 1600));
   left: calc(30px + -30 * ((100vw - 320px) / 1600));
 }
 
@@ -1217,6 +1169,7 @@ body.ie ._ibg img {
   color: #282630;
   font-family: Poppins;
   font-size: calc(25px + 71 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(10px + 15 * ((100vw - 320px) / 1600));
   font-weight: 600;
   text-align: left;
   text-transform: uppercase;
@@ -1229,8 +1182,12 @@ body.ie ._ibg img {
   font-weight: 600;
   line-height: 33px;
   text-align: left;
-  padding-top: calc(20px + 30 * ((100vw - 320px) / 1600));
-  padding-bottom: calc(10px + 40 * ((100vw - 320px) / 1600));
+  padding-top: calc(20px + 5 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(10px + 15 * ((100vw - 320px) / 1600));
+}
+
+.goodfood__btns {
+  padding-top: calc(10px + 15 * ((100vw - 320px) / 1600));
 }
 
 .goodfood__btn {
@@ -1250,7 +1207,7 @@ body.ie ._ibg img {
 .goodfood__arrow {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   background: none;
 }
 
@@ -1267,10 +1224,17 @@ body.ie ._ibg img {
 .social_link {
   width: 17px;
   height: 17px;
+  margin-top: 60px;
 }
 
-.linkedin {
-  padding: 55px 0 55px 0;
+.social_link:first-child {
+  margin-top: 0;
+}
+
+.social_link:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .why__wrapper {
@@ -1353,7 +1317,6 @@ body.ie ._ibg img {
 }
 
 .card-text {
-  /* Style for "Reprehende" */
   color: #65636a;
   font-size: 16px;
   font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
@@ -1390,6 +1353,17 @@ body.ie ._ibg img {
 }
 
 .dishes__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 940px;
   margin-left: calc(10px + 40 * ((100vw - 320px) / 1600));
   margin-right: calc(10px + 40 * ((100vw - 320px) / 1600));
   width: 100%;
@@ -1434,7 +1408,6 @@ body.ie ._ibg img {
 
 .dishes__column:nth-child(2n) {
   position: relative;
-  /* color: #7fff00; */
   bottom: 83px;
 }
 
@@ -1574,26 +1547,6 @@ body.ie ._ibg img {
   font-style: normal;
   letter-spacing: normal;
   line-height: 24px;
-}
-
-.btn {
-  border-radius: 25px;
-  background-color: #ffdd63;
-  padding: 20px;
-  height: calc(35px + 8 * ((100vw - 320px) / 1600));
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: none;
-}
-
-.btn:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .show {
@@ -1739,8 +1692,17 @@ body.ie ._ibg img {
   opacity: 1;
 }
 
+.reviews {
+  position: relative;
+  overflow: hidden;
+  min-height: 790px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .reviews__wrapper {
-  max-width: 1400px;
+  width: 1400px;
 }
 
 h3 {
@@ -1862,6 +1824,31 @@ h3 {
 .more img {
   margin-bottom: 16px;
   height: 24px;
+}
+
+.reviews__title {
+  position: relative;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.rewiews__bg {
+  position: absolute;
+  bottom: 124px;
+  right: 240px;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .footer {
@@ -2018,6 +2005,26 @@ h3 {
           flex: 1 1 auto;
 }
 
+.btn {
+  border-radius: 25px;
+  background-color: #ffdd63;
+  padding: 20px;
+  height: calc(35px + 8 * ((100vw - 320px) / 1600));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
@@ -2058,15 +2065,20 @@ h3 {
 @media (max-width: 1364px) {
   .dishes__column:nth-child(2n) {
     position: static;
-    /* color: #7fff00; */
+  }
+}
+
+@media (max-width: 1250px) {
+  .goodfood__text {
+    background: rgba(0, 0, 0, 0.623);
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
   }
 }
 
 @media (max-width: 991.98px) {
-  ._container {
-    max-width: 750px;
-  }
-
   .select__title {
     font-size: 18px;
   }
@@ -2081,6 +2093,10 @@ h3 {
     max-width: none;
     padding: 0 10px;
   }
+
+  .goodfood__wrapper {
+    padding-top: 125px;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -2088,6 +2104,12 @@ h3 {
     min-width: 150px;
     height: auto;
     padding: 5px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .goodfood__btns {
+    margin-top: 160px;
   }
 }
 
