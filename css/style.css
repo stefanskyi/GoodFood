@@ -1757,7 +1757,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
-  width: 27%;
+  width: 21%;
   -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   -o-transition: transform 500ms ease;
@@ -2109,7 +2109,7 @@ h3 {
 
 @media (max-width: 479.98px) {
   .goodfood__btns {
-    margin-top: 160px;
+    margin-top: 100px;
   }
 }
 
