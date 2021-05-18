@@ -2735,4 +2735,16 @@ animate({
 
 
 
+let scrolled;
+window.onscroll = function () {
+	scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	if (scrolled > 80) {
+		$(".header").css({ "background": "#f5f5f5", "transition": "all 0.8s ease-in-out" })
+	}
+	if (80 > scrolled) {
+		$(".header").css({ "background": "none" })
+	}
+}
+
+
 

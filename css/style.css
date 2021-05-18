@@ -1160,6 +1160,12 @@ body.ie ._ibg img {
   max-width: 640px;
 }
 
+.goodfood__discription {
+  -webkit-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
 .goodfood__discription span {
   display: inline-block;
   margin-bottom: calc(10px + 40 * ((100vw - 320px) / 1600));
@@ -1253,26 +1259,27 @@ body.ie ._ibg img {
   width: 94px;
   height: 94px;
   left: calc(450px + 270 * ((100vw - 320px) / 1600));
-  top: 170px;
+  top: calc(0px + 170 * ((100vw - 320px) / 1600));
   background: #ffdd63;
   border-radius: 50%;
+  z-index: -1;
 }
 
 .tomato {
   position: absolute;
-  top: 625px;
-  left: 840px;
+  left: calc(650px + 190 * ((100vw - 320px) / 1600));
+  top: calc(0px + 625 * ((100vw - 320px) / 1600));
 }
 
 .tomato_top {
   position: absolute;
-  top: 315px;
-  left: 954px;
+  top: calc(0px + 315 * ((100vw - 320px) / 1600));
+  left: calc(750px + 195 * ((100vw - 320px) / 1600));
 }
 
 .small-circle {
   position: absolute;
-  top: 120px;
+  top: calc(-300px + 420 * ((100vw - 320px) / 1600));
   left: calc(-95px + 220 * ((100vw - 320px) / 1600));
   width: 800px;
   height: 800px;
@@ -1285,7 +1292,7 @@ body.ie ._ibg img {
 
 .big-circle {
   position: absolute;
-  top: 0;
+  top: calc(-400px + 400 * ((100vw - 320px) / 1600));
   left: calc(-205px + 190 * ((100vw - 320px) / 1600));
   width: 1080px;
   height: 1080px;
@@ -1430,9 +1437,9 @@ body.ie ._ibg img {
 }
 
 .dishes__column {
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
   min-width: 288px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2120,7 +2127,7 @@ h3 {
 
 @media (max-width: 1590px) {
   .goodfood__discription {
-    background: rgba(0, 0, 0, 0.623);
+    background: rgba(0, 0, 0, 0.877);
     padding: 15px;
     border-radius: 25px;
   }
